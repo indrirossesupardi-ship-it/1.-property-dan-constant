@@ -11,6 +11,13 @@ class Produk {
     // constanta
     public const PAJAK = 0.11;
 
+    public function _construct($kode, $nama, $harga, $stok) {
+        $this->kode = $kode;
+        $this->nama = $nama;
+        $this->harga = $harga;
+        $this->stok = $stok;
+    }
+
     public function pajak () {
         return self::PAJAK * 100;  
     }
@@ -24,6 +31,7 @@ class Produk {
 $produk = new Produk();
 
 // input ke property
+$produk = new Produk('P0001', 'Laptop', 10000000,5);
 $produk->kode = 'P001';
 $produk->nama = 'Laptop';
 $produk->harga = 10000000;
