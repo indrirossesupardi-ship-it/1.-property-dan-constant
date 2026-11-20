@@ -13,7 +13,7 @@ class Produk {
     // constanta
     public const PAJAK = 0.11;
 
-    public function _construct() {
+    public function __construct() {
 
     }
 
